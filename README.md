@@ -9,5 +9,5 @@ Key features -
 
 - Items can be added to favorites and displayed in a separate tab
 
-- Total Payment Bill Amount can be emailed directly to recipient with Order Subject and Order message. (uses URL Launcher with 'mailto'scheme)
+- Total Payment Bill Amount can be emailed directly to recipient with Order Subject and Order message. (uses URL Launcher with 'mailto' scheme)
 
