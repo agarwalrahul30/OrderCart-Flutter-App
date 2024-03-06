@@ -1,16 +1,13 @@
 # order_cart_app
 
-A new Flutter project.
+A cross-platform app built on Flutter framework which uses dart as the programming language.
 
-## Getting Started
+Key features -
+- Multi-tab and Multi Screen navigation with State Management.
 
-This project is a starting point for a Flutter application.
+- Cannot add negative item count to cart (increment and decrement feature)
 
-A few resources to get you started if this is your first Flutter project:
+- Items can be added to favorites and displayed in a separate tab
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Total Payment Bill Amount can be emailed directly to recipient with Order Subject and Order message. (uses URL Launcher with 'mailto'scheme)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.

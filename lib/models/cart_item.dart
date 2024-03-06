@@ -129,7 +129,6 @@ class _CartItemState extends State<CartItem> {
 
   Widget _buildTrailingButtons() {
     return Row(
-      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Row(
           children: [

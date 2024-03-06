@@ -27,7 +27,9 @@ class CartScreen extends StatelessWidget {
                 padding: const EdgeInsets.all(8.0),
                 child: ListView(
                   shrinkWrap: true,
-                  children: Data.cartItems.map((item) => GestureDetector(
+                  children: 
+                    Data.cartItems.map((item) => 
+                      GestureDetector(                  //to allow navigation on tap or click
                           onTap: () {
                             // Navigate to item details page
                             Navigator.push(
@@ -37,6 +39,7 @@ class CartScreen extends StatelessWidget {
                                   itemName: item.name,
                                   price: item.price,
                                   imageUrl: item.imageURL,
+                                  // description: item.description,
                                 ),
                               ),
                             );
@@ -46,7 +49,8 @@ class CartScreen extends StatelessWidget {
                             price: item.price,
                             imageUrl: item.imageURL,
                           ),
-                  )).toList(),
+                      )
+                   ).toList(),
                 ),
               ),
             ),
@@ -65,7 +69,7 @@ class CartScreen extends StatelessWidget {
                   path: 'rahul.r.agarwal@kipi.bi',
                   query: encodeQueryParameters(<String, String>{
                     'subject': 'Order Bill for your Products',
-                    'body': 'Dear Customer,\n\nPlease find your order bill amount below:\n\nAmount: ${cartController.total.value}\n\nRegards,\nRahul\n',
+                    'body': 'Dear Customer,\n\nPlease find your order bill amount below:\n\nAmount: ₹${cartController.total.value}\n\nRegards,\nRahul\n',
                   }),
                 );
 

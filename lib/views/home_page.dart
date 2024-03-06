@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:order_cart_app/views/cart_screen_tab.dart';
 import 'package:order_cart_app/views/favorites_tab.dart';
@@ -8,13 +7,15 @@ class MyHomePage extends StatefulWidget {
   State<MyHomePage> createState() => _MyHomePageState();
 }
 
+//When you create a StatefulWidget, you must also create a corresponding State class that manages the widget's state.
 class _MyHomePageState extends State<MyHomePage> {
 
-  var selectedIndex = 0;     // ← Add this property.
+  var selectedIndex = 0;
 
   @override
   Widget build(BuildContext context) {
 
+    // Switch between different pages based on selectedIndex
     Widget page;
     switch (selectedIndex) {
       case 0:
@@ -33,8 +34,9 @@ class _MyHomePageState extends State<MyHomePage> {
           body: Row(
             children: [
               SafeArea(
+                // Build the UI with NavigationRail and the selected page
                 child: NavigationRail(
-                  extended: constraints.maxWidth >= 600,  // ← Here.
+                  extended: constraints.maxWidth >= 600,  
                   destinations: [
                     NavigationRailDestination(
                       icon: Icon(Icons.home),

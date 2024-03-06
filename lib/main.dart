@@ -8,6 +8,7 @@ import 'package:order_cart_app/views/home_page.dart';
 void main() {
   runApp(
     MultiProvider(
+      //creates instances of CartController and FavoritesController using provider class
       providers: [
         ChangeNotifierProvider(create: (context) => CartController()),
         ChangeNotifierProvider(create: (context) => FavoritesController()),
